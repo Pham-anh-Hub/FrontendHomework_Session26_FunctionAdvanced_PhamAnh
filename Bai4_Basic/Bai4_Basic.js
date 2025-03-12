@@ -16,5 +16,10 @@ function checkPrime(number) {
         }
     }
 }
-const isPrime = numbers.filter((value) => checkPrime(value));
-console.log(isPrime);
+if(numbers.length === 0){
+    console.log(`Mảng không có phần tử nào`);
+}else{
+    const isPrime = numbers.filter((value) => checkPrime(value));
+    console.log(isPrime);
+}
+
